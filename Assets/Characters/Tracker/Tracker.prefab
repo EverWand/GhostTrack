@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8288936159801878101}
   - component: {fileID: 6275206083788547460}
   - component: {fileID: 4472249857809339669}
-  - component: {fileID: 2224835324547669933}
+  - component: {fileID: 1516103329420013646}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -41,7 +41,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374107377097940527}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 2dc7b382d25903545b405802eb2198ab, type: 3}
 --- !u!23 &4472249857809339669
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -86,8 +86,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2224835324547669933
-CapsuleCollider:
+--- !u!65 &1516103329420013646
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -103,12 +103,10 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 1.7, z: 0.2947064}
+  m_Center: {x: 0, y: 0.8925357, z: -0.01190237}
 --- !u!1 &5965870015127342612
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,7 +116,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6640081711098151003}
-  - component: {fileID: 5417826682585925105}
+  - component: {fileID: -740283166221292313}
+  - component: {fileID: 256557527839485541}
+  - component: {fileID: 188640838560877320}
   m_Layer: 0
   m_Name: Tracker
   m_TagString: Untagged
@@ -143,7 +143,7 @@ Transform:
   - {fileID: 7706683787011061296}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5417826682585925105
+--- !u!114 &-740283166221292313
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,11 +152,59 @@ MonoBehaviour:
   m_GameObject: {fileID: 5965870015127342612}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e382f0726f6299348aa73fdcce2f8436, type: 3}
+  m_Script: {fileID: 11500000, guid: dd69745230b3e214786bb2ef7037b0b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 5965870015127342612}
-  moveSpeed: 10
+  moveSpeed: 0
+  rotationSpeed: 0
+--- !u!54 &256557527839485541
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5965870015127342612}
+  serializedVersion: 4
+  m_Mass: 120
+  m_Drag: 30
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &188640838560877320
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5965870015127342612}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 1.7, z: 0.3}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!1001 &4605629483755942682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -165,6 +213,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6640081711098151003}
     m_Modifications:
+    - target: {fileID: 5096850156648964928, guid: ac17611f933f2524b8ee0a5036ffd429, type: 3}
+      propertyPath: field of view
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096850156648964928, guid: ac17611f933f2524b8ee0a5036ffd429, type: 3}
+      propertyPath: near clip plane
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5096850158276147074, guid: ac17611f933f2524b8ee0a5036ffd429, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.35000002
@@ -183,11 +239,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5096850158276147074, guid: ac17611f933f2524b8ee0a5036ffd429, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9914449
+      value: 0.9848078
       objectReference: {fileID: 0}
     - target: {fileID: 5096850158276147074, guid: ac17611f933f2524b8ee0a5036ffd429, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.13052624
+      value: -0.17364825
       objectReference: {fileID: 0}
     - target: {fileID: 5096850158276147074, guid: ac17611f933f2524b8ee0a5036ffd429, type: 3}
       propertyPath: m_LocalRotation.y
@@ -199,7 +255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5096850158276147074, guid: ac17611f933f2524b8ee0a5036ffd429, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -15
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 6132178175923897642, guid: ac17611f933f2524b8ee0a5036ffd429, type: 3}
       propertyPath: m_LocalPosition.x
@@ -207,11 +263,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6132178175923897642, guid: ac17611f933f2524b8ee0a5036ffd429, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.57
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6132178175923897642, guid: ac17611f933f2524b8ee0a5036ffd429, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 6132178175923897642, guid: ac17611f933f2524b8ee0a5036ffd429, type: 3}
       propertyPath: m_LocalRotation.w
