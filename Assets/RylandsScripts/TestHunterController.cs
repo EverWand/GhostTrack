@@ -24,7 +24,7 @@ public class TestHunterController : MonoBehaviour
     {
         if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.One))
         {
-            player.transform.Translate(joystick.x * Time.deltaTime, 0.0f, joystick.y * Time.deltaTime);
+            player.transform.Translate(joystick.x * Time.deltaTime * moveSpeed, 0.0f, joystick.y * Time.deltaTime * moveSpeed);
         }
     }
 }
