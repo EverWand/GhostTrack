@@ -4,6 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Levels/TitleLevel.unity
+    guid: 9689a32aa29364042be9e47d5c3e4b31
+  - enabled: 1
+    path: Assets/Levels/Soph's Level.unity
+    guid: a7464b46f13f3f347b3ae231471cf1b6
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
