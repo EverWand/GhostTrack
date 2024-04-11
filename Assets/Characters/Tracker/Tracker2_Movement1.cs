@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class TrackerMovement : MonoBehaviour
+public class Tracker2_Movement : MonoBehaviour
 {
+    public enum TrackerSlots { ONE, TWO };
     //public floats
+    public TrackerSlots TrackerID;
+    
     public float moveSpeed;
     public float rotationSpeed;
 
@@ -26,14 +29,17 @@ public class TrackerMovement : MonoBehaviour
 
     public void Move()
     {
-        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.One)){
+        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.Two))
+        {
             Vector3 movementVector = transform.forward.normalized * joystick.y;
 
             Debug.Log(movementVector);
             rb.AddForce(movementVector * Time.deltaTime * moveSpeed, ForceMode.Force);
 
             //transform.Translate(new Vector3(0, 0, joystick.y * moveSpeed * Time.deltaTime));
-            transform.Rotate(new Vector3( 0, joystick.x * rotationSpeed * Time.deltaTime, 0));
+            transform.Rotate(new Vector3(0, joystick.x * rotationSpeed * Time.deltaTime, 0));
         }
     }
 }
+
+

@@ -11,6 +11,7 @@ public class GhostController : MonoBehaviour
 
     //rigidbody for player
     private Rigidbody pawnRB;
+    public GameObject Body;
 
     private CapsuleCollider ghostCollision;
 
@@ -131,7 +132,7 @@ public class GhostController : MonoBehaviour
     //movement
         if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.Three))
         {
-            MoveJoystick(new Vector3(joystick.y, 0, joystick.x));
+            MoveJoystick(new Vector3(-joystick.x, 0, -joystick.y));
         }
 
         else
@@ -232,6 +233,11 @@ public class GhostController : MonoBehaviour
         Vector3 joyMovement = moveVector * moveSpeed / Time.deltaTime;
         //add force to rigidbody
         pawnRB.AddForce(joyMovement);
+
+        Vector3 RotVect = pawnRB.velocity;
+        RotVect.y = 0;
+        Body.transform.rotation = Quaternion.LookRotation(RotVect);
+        
     }
 
     public void HideSound ()
