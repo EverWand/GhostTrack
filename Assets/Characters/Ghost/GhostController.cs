@@ -5,6 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class GhostController : MonoBehaviour
 {
+    //Sound
+    public GameObject HideAudio;
+    public GameObject DecoyAudio;
+
     //rigidbody for player
     private Rigidbody pawnRB;
 
@@ -44,6 +48,9 @@ public class GhostController : MonoBehaviour
         visualMesh = GetComponent<MeshRenderer>();
         //setting decoy to no cooldown for first use
         currentCooldownTime = decoyCooldown;
+
+        HideAudio.SetActive(false);
+        DecoyAudio.SetActive(false);
     }
 
     // Update is called once per frame
@@ -70,6 +77,7 @@ public class GhostController : MonoBehaviour
                     {
                         ToggleHide();
                         CallToProp(interactProp, false);
+                        HideSound();
                     }
                 }
             }
@@ -86,6 +94,7 @@ public class GhostController : MonoBehaviour
                         CallToProp(interactProp, true);
                         currentCooldownTime = 0f;
                         canDecoy = false;
+                        DecoySound();
                     }
                 }
             }
@@ -100,6 +109,7 @@ public class GhostController : MonoBehaviour
                 {
                     ToggleHide();
                     CallToProp(interactProp, false);
+                    HideSound();
                 }
             }
         }
@@ -113,6 +123,7 @@ public class GhostController : MonoBehaviour
                     CallToProp(interactProp, true);
                     currentCooldownTime = 0f;
                     canDecoy = false;
+                    DecoySound();
                 }
             }
         }
@@ -221,5 +232,15 @@ public class GhostController : MonoBehaviour
         Vector3 joyMovement = moveVector * moveSpeed / Time.deltaTime;
         //add force to rigidbody
         pawnRB.AddForce(joyMovement);
+    }
+
+    public void HideSound ()
+    {
+        HideAudio.SetActive(true);
+    }
+
+    public void DecoySound()
+    {
+        DecoyAudio.SetActive(true);
     }
 }
