@@ -12,10 +12,13 @@ public class DebugController : MonoBehaviour
     public KeyCode moveUpKey;
     public KeyCode moveDownKey;
 
+    // Rigidbody
+    private Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -29,23 +32,12 @@ public class DebugController : MonoBehaviour
         float HorizontalInput = Input.GetAxis("Horizontal");
         float VerticalInput = Input.GetAxis("Vertical");
 
-
-        Vector3 movementDirection = transform.forward;
+        Vector3 movementDirection = (this.transform.forward.normalized * VerticalInput);
 
         Vector3 RotationStep = new Vector3(0, HorizontalInput, 0);
         RotationStep.Normalize();
-
-
-
-        if (Input.GetKey(moveUpKey))
-        {
-            transform.Translate(movementDirection * moveSpeed * Time.deltaTime, Space.World);
-        }
-
-        if (Input.GetKey(moveDownKey))
-        {
-            transform.Translate(-movementDirection * moveSpeed * Time.deltaTime, Space.World);
-        }
+        
+        rb.AddForce(movementDirection * Time.deltaTime * moveSpeed);
 
         transform.Rotate(RotationStep * rotationSpeed * Time.deltaTime, Space.World);
     }
