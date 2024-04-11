@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GhostHealth : MonoBehaviour
 {
+    public GameObject owner;
     public float currentHealth;
     public float maxHealth;
     
@@ -16,7 +17,9 @@ public class GhostHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (currentHealth <= 0) {
+            Destroy(owner);
+        }
     }
 
     public void TakeDamageOverTime(float amountPerSecond)
