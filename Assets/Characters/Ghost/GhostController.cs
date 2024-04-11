@@ -13,9 +13,12 @@ public class GhostController : MonoBehaviour
     public KeyCode moveDownKey;
     public KeyCode moveRightKey;
     public KeyCode moveLeftKey;
+    public KeyCode interactKey;
 
     //public floats
     public float moveSpeed;
+
+    public GameObject interactProp;
 
     // Start is called before the first frame update
     void Start()
@@ -27,10 +30,30 @@ public class GhostController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick))
+        if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.Three, out bool xPressed, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.Three))
         {
-            MoveJoystick(new Vector3(joystick.x, 0, joystick.y));
+            if(xPressed)
+            {
+                if(interactProp != null)
+                {
+                    Debug.Log("Ghost Pressed Interact");
+                }
+            }
         }
+
+        else if (Input.GetKeyDown(interactKey))
+        {
+            if (interactProp != null && interactProp != this.gameObject)
+            {
+                Debug.Log("Ghost Pressed Interact");
+            }
+        }
+
+        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.Three))
+        {
+            MoveJoystick(new Vector3(joystick.y, 0, joystick.x));
+        }
+
         else
         {
             if (Input.GetKey(moveUpKey))
@@ -54,6 +77,13 @@ public class GhostController : MonoBehaviour
             }
         }
     }
+
+    public void CanInteract(GameObject propReference)
+    {
+        interactProp = propReference;
+    }
+
+
 
     public void MoveUp()
     {

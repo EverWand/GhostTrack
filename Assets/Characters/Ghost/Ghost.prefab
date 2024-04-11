@@ -154,4 +154,5 @@ MonoBehaviour:
   moveDownKey: 115
   moveRightKey: 100
   moveLeftKey: 97
-  moveSpeed: 0.1
+  interactKey: 101
+  moveSpeed: 10
