@@ -9,6 +9,10 @@ public class GameManager : MonoBehaviour
     public GameObject EndingScreen;
     public static GameManager instance;
 
+    public KeyCode TitleScreenKey;
+    public KeyCode CreditsScreenKey;
+    public KeyCode EndingScreenKey;
+
     void Awake()
     {
         if (instance == null)
@@ -31,7 +35,20 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(TitleScreenKey))
+        {
+            ActivateTitleScreen();
+        }
+
+        if (Input.GetKeyDown(CreditsScreenKey))
+        {
+            ActivateCreditsScreen();
+        }
+
+        if (Input.GetKeyDown(EndingScreenKey))
+        {
+            ActivateEndingScreen();
+        }
     }
 
     public void DeactiateStates()
@@ -56,7 +73,7 @@ public class GameManager : MonoBehaviour
 
         DeactiateStates();
 
-        TitleScreen.SetActive(true);
+        CreditsScreen.SetActive(true);
     }
 
     public void ActivateEndingScreen()
@@ -65,6 +82,6 @@ public class GameManager : MonoBehaviour
 
         DeactiateStates();
 
-        TitleScreen.SetActive(true);
+        EndingScreen.SetActive(true);
     }
 }
