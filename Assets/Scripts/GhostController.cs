@@ -27,24 +27,31 @@ public class GhostController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(moveUpKey))
+        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick))
         {
-            MoveUp();
+            MoveJoystick(new Vector3(joystick.x, 0, joystick.y));
         }
-
-        if (Input.GetKey(moveDownKey))
+        else
         {
-            MoveDown();
-        }
+            if (Input.GetKey(moveUpKey))
+            {
+                MoveUp();
+            }
 
-        if (Input.GetKey(moveRightKey))
-        {
-            MoveRight();
-        }
+            if (Input.GetKey(moveDownKey))
+            {
+                MoveDown();
+            }
 
-        if (Input.GetKey(moveLeftKey))
-        {
-            MoveLeft();
+            if (Input.GetKey(moveRightKey))
+            {
+                MoveRight();
+            }
+
+            if (Input.GetKey(moveLeftKey))
+            {
+                MoveLeft();
+            }
         }
     }
 
@@ -78,5 +85,13 @@ public class GhostController : MonoBehaviour
         Vector3 upMovement = new Vector3(-1, 0, 0) * moveSpeed / Time.deltaTime;
         //add force to rigidbody
         pawnRB.AddForce(upMovement);
+    }
+
+    public void MoveJoystick(Vector3 moveVector)
+    {
+        //Create vector for movement
+        Vector3 joyMovement = moveVector * moveSpeed / Time.deltaTime;
+        //add force to rigidbody
+        pawnRB.AddForce(joyMovement);
     }
 }
