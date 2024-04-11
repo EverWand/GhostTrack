@@ -30,7 +30,7 @@ public class TrackerMovement : MonoBehaviour
             Vector3 movementVector = transform.forward.normalized * joystick.y;
 
             Debug.Log(movementVector);
-            rb.AddForce(movementVector, ForceMode.Force);
+            rb.AddForce(movementVector * Time.deltaTime * moveSpeed, ForceMode.Force);
 
             //transform.Translate(new Vector3(0, 0, joystick.y * moveSpeed * Time.deltaTime));
             transform.Rotate(new Vector3( 0, joystick.x * rotationSpeed * Time.deltaTime, 0));
