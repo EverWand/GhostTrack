@@ -9,11 +9,13 @@ public class TrackerMovement : MonoBehaviour
     public float moveSpeed;
     public float rotationSpeed;
 
+    private Rigidbody rb;
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -25,7 +27,11 @@ public class TrackerMovement : MonoBehaviour
     public void Move()
     {
         if (TiltFive.Input.TryGetStickTilt(out var joystick)){
-            transform.Translate(new Vector3(0, 0, joystick.y * moveSpeed * Time.deltaTime));
+            Vector3 movementVector = new Vector3(joystick.x * Time.deltaTime * moveSpeed, 0.0f, joystick.y * Time.deltaTime * moveSpeed);
+
+            rb.AddForce(movementVector, ForceMode.Force);
+
+            //transform.Translate(new Vector3(0, 0, joystick.y * moveSpeed * Time.deltaTime));
             transform.Rotate(new Vector3( 0, joystick.x * rotationSpeed * Time.deltaTime, 0));
         }
     }
