@@ -9,11 +9,17 @@ public class DamageGhostByTouching : MonoBehaviour
     public float range;
 
     public GhostHealth[] ghosts;
-    
+
+    //Audio Objects
+    public GameObject DamageAudio;
+    public GameObject SpottedAudio;
+
     // Start is called before the first frame update
     void Start()
     {
         ghosts = FindObjectsByType<GhostHealth>(FindObjectsSortMode.None);
+        DamageAudio.SetActive(false);
+        SpottedAudio.SetActive(false);
     }
 
     // Update is called once per frame
@@ -26,6 +32,12 @@ public class DamageGhostByTouching : MonoBehaviour
             Debug.Log(ghostHealth);
 
             ghostHealth.TakeDamageOverTime(damage);
+
+            StartDamageAudio();
+        }
+        else
+        {
+            StopDamageAudio();
         }
     }
 
@@ -57,6 +69,7 @@ public class DamageGhostByTouching : MonoBehaviour
                     //Debug.Log("Hit " + hit.collider);
                     if (hit.collider.gameObject == ghosts[0].gameObject)
                     {
+                        StartSpottedAudio();
                         //Debug.Log("Hit Player");
                         return true;
                     }
@@ -98,5 +111,20 @@ public class DamageGhostByTouching : MonoBehaviour
             return false;
         }
 
+    }
+
+    public void StartDamageAudio()
+    {
+        DamageAudio.SetActive(true);
+    }
+
+    public void StopDamageAudio()
+    {
+        DamageAudio.SetActive(false);
+    }
+
+    public void StartSpottedAudio()
+    {
+        SpottedAudio.SetActive(true);
     }
 }
