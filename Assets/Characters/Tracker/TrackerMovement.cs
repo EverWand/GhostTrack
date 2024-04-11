@@ -26,9 +26,10 @@ public class TrackerMovement : MonoBehaviour
 
     public void Move()
     {
-        if (TiltFive.Input.TryGetStickTilt(out var joystick)){
+        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.One)){
             Vector3 movementVector = new Vector3(joystick.x * Time.deltaTime * moveSpeed, 0.0f, joystick.y * Time.deltaTime * moveSpeed);
 
+            Debug.Log(movementVector);
             rb.AddForce(movementVector, ForceMode.Force);
 
             //transform.Translate(new Vector3(0, 0, joystick.y * moveSpeed * Time.deltaTime));
