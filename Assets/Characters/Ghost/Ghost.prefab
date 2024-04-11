@@ -154,5 +154,7 @@ MonoBehaviour:
   moveDownKey: 115
   moveRightKey: 100
   moveLeftKey: 97
-  interactKey: 101
+  hideKey: 101
+  decoyKey: 120
   moveSpeed: 10
+  decoyCooldown: 1
