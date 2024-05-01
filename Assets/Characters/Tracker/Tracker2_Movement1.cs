@@ -29,7 +29,7 @@ public class Tracker2_Movement : MonoBehaviour
 
     public void Move()
     {
-        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.Two))
+        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.Three))
         {
             Vector3 movementVector = transform.forward.normalized * joystick.y;
 
