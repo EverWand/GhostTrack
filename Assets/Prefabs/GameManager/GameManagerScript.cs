@@ -30,6 +30,6 @@ public class GameManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameTimer(Time.DeltaTime);
+        GameTimer(Time.deltaTime);
     }
 }
