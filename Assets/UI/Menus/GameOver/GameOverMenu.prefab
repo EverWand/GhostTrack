@@ -120,10 +120,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70331fe5eba3c524a8333f2f91181a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WinState: 1
   PlayerTags:
   - {fileID: 4514960526241875584}
   - {fileID: 5560259965852406414}
   - {fileID: 7442762720348659490}
+  WinHeader: {fileID: 2617064838539244024}
 --- !u!1 &4264746837274935051
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,7 +546,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5363605103213457823, guid: 6d4a7c34a43e27f4db715c29e8cb977b, type: 3}
       propertyPath: Winner
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1740861342543224348, guid: 6d4a7c34a43e27f4db715c29e8cb977b, type: 3}
       propertyPath: m_Name
@@ -553,7 +555,7 @@ PrefabInstance:
     - target: {fileID: 1760486922626936669, guid: 6d4a7c34a43e27f4db715c29e8cb977b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1676846469, guid: af03271d20bc35c4f80b27dfdc5de6cf, type: 3}
+      objectReference: {fileID: -1797309339, guid: e4a10acc7a26f404699a8819de5c050c, type: 3}
     - target: {fileID: 5934411741022876732, guid: 6d4a7c34a43e27f4db715c29e8cb977b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.28111
@@ -659,6 +661,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d4a7c34a43e27f4db715c29e8cb977b, type: 3}
+--- !u!114 &2617064838539244024 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -5363605103213457823, guid: 6d4a7c34a43e27f4db715c29e8cb977b, type: 3}
+  m_PrefabInstance: {fileID: 1279315903845416857}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d7e7b99a254ec438cd289a0a2b85ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4871292808551844773 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5934411741022876732, guid: 6d4a7c34a43e27f4db715c29e8cb977b, type: 3}
@@ -678,7 +691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 522196291895997093, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: WinState
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1302426529985333496, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: m_Name
@@ -687,10 +700,10 @@ PrefabInstance:
     - target: {fileID: 2331644776605470055, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 978657637, guid: 7840cb908d5f32b4985bba2d403403f1, type: 3}
+      objectReference: {fileID: -1077257721, guid: f91134ef1350446488448f8ae05ffe0a, type: 3}
     - target: {fileID: 6892656279828502022, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: BackState
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8919674628659515228, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: m_LocalScale.x
@@ -702,7 +715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8919674628659515228, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -40
+      value: -53.1
       objectReference: {fileID: 0}
     - target: {fileID: 8919674628659515228, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -821,6 +834,10 @@ PrefabInstance:
       propertyPath: Player
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 522196291895997093, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
+      propertyPath: WinState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 938202308816123204, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -829,9 +846,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerTag2
       objectReference: {fileID: 0}
+    - target: {fileID: 2331644776605470055, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 978657637, guid: 7840cb908d5f32b4985bba2d403403f1, type: 3}
     - target: {fileID: 5546581506420707195, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: m_text
-      value: Player 2
+      value: Hunter 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892656279828502022, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
+      propertyPath: BackState
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7467515381603853946, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: Avatar_Icon
@@ -851,7 +876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8919674628659515228, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -251
+      value: -314.9
       objectReference: {fileID: 0}
     - target: {fileID: 8919674628659515228, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -970,6 +995,10 @@ PrefabInstance:
       propertyPath: Player
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 522196291895997093, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
+      propertyPath: WinState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 938202308816123204, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -978,9 +1007,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerTag3
       objectReference: {fileID: 0}
+    - target: {fileID: 2331644776605470055, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 978657637, guid: 7840cb908d5f32b4985bba2d403403f1, type: 3}
     - target: {fileID: 5546581506420707195, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: m_text
-      value: Player 3
+      value: Hunter 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892656279828502022, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
+      propertyPath: BackState
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7467515381603853946, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: Avatar_Icon
@@ -996,7 +1033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8919674628659515228, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 228
+      value: 158.8
       objectReference: {fileID: 0}
     - target: {fileID: 8919674628659515228, guid: 736a57c013fa6ec41b12c053854a1c1f, type: 3}
       propertyPath: m_LocalPosition.y

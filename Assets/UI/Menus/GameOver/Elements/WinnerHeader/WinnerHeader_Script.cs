@@ -25,11 +25,11 @@ public class WinnerHeader_Script : MonoBehaviour
 
     }
 
-    public void OnValidate() {
+   void OnValidate() {
         UpdateWinnerDisplay();
     }
 
-    private void UpdateWinnerDisplay(){
+    public void UpdateWinnerDisplay(){
         if (Winner == EWinner.TRACKERS) {
             WinnerDiplay.sprite = TrackerWinSprite;
         }

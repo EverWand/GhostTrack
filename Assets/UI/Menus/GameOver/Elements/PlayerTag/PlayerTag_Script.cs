@@ -6,8 +6,8 @@ using TMPro;
 
 public class PlayerTag_Script : MonoBehaviour
 {
-    public enum EPlayers { Player1, Player2, Player3 }
-    public EPlayers Player = EPlayers.Player1;
+    public enum EPlayers { Ghost, Hunter1, Hunter2 }
+    public EPlayers Player = EPlayers.Ghost;
 
     public enum EWinState { Win, Lose };
     public EWinState WinState = EWinState.Win;
@@ -42,23 +42,23 @@ public class PlayerTag_Script : MonoBehaviour
     {
         switch (Player)
         {
-            case EPlayers.Player1:
+            case EPlayers.Ghost:
                 IconScript.Avatar_Icon = AvatarIconScript.Avatars.Ghost;
-                PlayerText.text = "Player 1";
+                PlayerText.text = "Ghost";
                 break;
-            case EPlayers.Player2:
+            case EPlayers.Hunter1:
                 IconScript.Avatar_Icon = AvatarIconScript.Avatars.Girl;
-                PlayerText.text = "Player 2";
+                PlayerText.text = "Hunter 1";
                 break;
-            case EPlayers.Player3:
+            case EPlayers.Hunter2:
                 IconScript.Avatar_Icon = AvatarIconScript.Avatars.Boy;
-                PlayerText.text = "Player 3";
+                PlayerText.text = "Hunter 2";
                 break;
         }
         IconScript.UpdateIconDisplay();
     }
 
-   void UpdateWinStateDisplay()
+   public void UpdateWinStateDisplay()
     {
         switch (WinState)
         {

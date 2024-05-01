@@ -23,15 +23,46 @@ public class GameOverScript : MonoBehaviour
         
     }
 
+    void OnValidate() 
+    {
+        UpdateResults();
+    }
+
     public void UpdateResults()
     {
         switch (WinState) 
         {
             case EWinStates.TackerWin:
+                WinHeader.Winner = WinnerHeader_Script.EWinner.TRACKERS;
+
+                for (int i = 0; i < PlayerTags.Length; i++)
+                {
+                    if (PlayerTags[i].Player != PlayerTag_Script.EPlayers.Ghost) {
+                        PlayerTags[i].WinState = PlayerTag_Script.EWinState.Win;
+                    }
+                    else {
+                        PlayerTags[i].WinState = PlayerTag_Script.EWinState.Lose;
+                    }
+                    
+                    PlayerTags[i].UpdateWinStateDisplay();
+                }
                 break;
             case EWinStates.GhostWin:
-                
+
+                WinHeader.Winner = WinnerHeader_Script.EWinner.GHOST;
+                for (int i = 0; i < PlayerTags.Length; i++)
+                {
+                    if (PlayerTags[i].Player != PlayerTag_Script.EPlayers.Ghost)
+                    {
+                        PlayerTags[i].WinState = PlayerTag_Script.EWinState.Lose;
+                    }
+                    else { PlayerTags[i].WinState = PlayerTag_Script.EWinState.Win; }
+                    
+                    PlayerTags[i].UpdateWinStateDisplay();
+                }
                 break;
         }
+
+        WinHeader.UpdateWinnerDisplay();
     }
 }
