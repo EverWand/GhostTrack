@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Game Levels/Soph's Level.unity
     guid: a7464b46f13f3f347b3ae231471cf1b6
+  - enabled: 1
+    path: Assets/Levels/Game Levels/Screens/GameOver.unity
+    guid: cd619d070ac1c4342a8c609ade774eb8
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

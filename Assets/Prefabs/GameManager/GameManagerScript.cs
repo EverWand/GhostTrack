@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManagerScript : MonoBehaviour
 {
     public static GameManagerScript instance;
+
+    public static bool didGhostWin = false;
 
     //CHARACTERS
     public GameObject Ghost;
@@ -59,16 +62,20 @@ public class GameManagerScript : MonoBehaviour
 
     public void OnGameOver(bool didGhostWin)
     {
+        GameManagerScript.didGhostWin = didGhostWin;
         //this will load the game over screen
+        SceneManager.LoadScene("GameOver");
+
     }
 
     public void OnPlay()
     {
+        SceneManager.LoadScene("Soph's Level");
         //this will load the main game level
     }
 
     public void LoadMainMenu()
     {
-
+        SceneManager.LoadScene("TitleLevel");
     }
 }

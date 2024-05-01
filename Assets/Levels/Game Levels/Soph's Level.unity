@@ -62580,6 +62580,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4279427187241192, guid: a9573256d677d7648aa47a5ccb46c4ce, type: 3}
   m_PrefabInstance: {fileID: 627103920}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1452151326 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
+  m_PrefabInstance: {fileID: 1585681926}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a01f4620ff313046ae9e86da095205d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1453003944
 GameObject:
   m_ObjectHideFlags: 0
@@ -68302,17 +68313,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 512914009}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
+      propertyPath: MaxTimeLeft
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1452151326}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -68327,15 +68342,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: OnGameOver
       objectReference: {fileID: 0}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: 
+      value: GameManagerScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
+      propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: 
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2554825527248176086, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: m_Name
@@ -72198,6 +72217,38 @@ PrefabInstance:
     - target: {fileID: 6999183362341322672, guid: 3987d073b86b93648ab897de99fc0a31, type: 3}
       propertyPath: currentHealth
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6999183362341322672, guid: 3987d073b86b93648ab897de99fc0a31, type: 3}
+      propertyPath: GhostDied.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6999183362341322672, guid: 3987d073b86b93648ab897de99fc0a31, type: 3}
+      propertyPath: GhostDied.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6999183362341322672, guid: 3987d073b86b93648ab897de99fc0a31, type: 3}
+      propertyPath: GhostDied.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1452151326}
+    - target: {fileID: 6999183362341322672, guid: 3987d073b86b93648ab897de99fc0a31, type: 3}
+      propertyPath: GhostDied.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6999183362341322672, guid: 3987d073b86b93648ab897de99fc0a31, type: 3}
+      propertyPath: GhostDied.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnGameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 6999183362341322672, guid: 3987d073b86b93648ab897de99fc0a31, type: 3}
+      propertyPath: GhostDied.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManagerScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6999183362341322672, guid: 3987d073b86b93648ab897de99fc0a31, type: 3}
+      propertyPath: GhostDied.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6999183362341322672, guid: 3987d073b86b93648ab897de99fc0a31, type: 3}
+      propertyPath: GhostDied.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
