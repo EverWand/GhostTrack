@@ -1,2 +1,13 @@
 fileFormatVersion: 2
 guid: 1043b2f8b6de02f49a6ee4c155958a23
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - interactPrompt: {instanceID: 0}
+  - swapMat: {fileID: 2100000, guid: 42a64eeea496b5c488c15ba0ba2e3940, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
