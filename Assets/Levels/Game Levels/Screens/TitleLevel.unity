@@ -10291,7 +10291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 893f8e9485ac9874484a26262d21a060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerID: 0
+  PlayerID: 1
   StartPressed:
     m_PersistentCalls:
       m_Calls:
