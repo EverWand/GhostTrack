@@ -70,7 +70,7 @@ public class GhostController : MonoBehaviour
 
     //interaction
         //hide
-        if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.X, out bool xPressed, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.Three))
+        if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.X, out bool xPressed, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.One))
         {
             if(xPressed)
             {

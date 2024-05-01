@@ -8,7 +8,8 @@ public class Tracker1_Movement : MonoBehaviour
     public enum TrackerSlots { ONE, TWO };
     //public floats
     public TrackerSlots TrackerID;
-    
+
+
     public float moveSpeed;
     public float rotationSpeed;
 
@@ -29,7 +30,7 @@ public class Tracker1_Movement : MonoBehaviour
 
     public void Move()
     {
-        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.One))
+        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.Two))
         {
             Vector3 movementVector = transform.forward.normalized * joystick.y;
 
@@ -40,6 +41,7 @@ public class Tracker1_Movement : MonoBehaviour
             transform.Rotate(new Vector3(0, joystick.x * rotationSpeed * Time.deltaTime, 0));
         }
     }
+
 }
 
 
