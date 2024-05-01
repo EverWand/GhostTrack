@@ -285,6 +285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerID: 0
+  AnimationController: {fileID: 1109921096903662793}
+  isStunned: 0
   moveSpeed: 1500
   rotationSpeed: 80
 --- !u!1001 &1613471056625417830
@@ -344,6 +346,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b44a5380da9af5c4f88b916fedafb683, type: 3}
+--- !u!95 &1109921096903662793 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1802293328665879215, guid: b44a5380da9af5c4f88b916fedafb683, type: 3}
+  m_PrefabInstance: {fileID: 1613471056625417830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7639945965908208017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8962929618485712887, guid: b44a5380da9af5c4f88b916fedafb683, type: 3}

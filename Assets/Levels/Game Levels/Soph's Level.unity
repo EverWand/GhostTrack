@@ -3209,6 +3209,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2356500680790986833, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
   m_PrefabInstance: {fileID: 57355392}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &57355394 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2356500680783806393, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
+  m_PrefabInstance: {fileID: 57355392}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &58810621 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4102960483416252, guid: a2a8263781f05fc4e904d29c2b5e4d95, type: 3}
@@ -22159,6 +22164,10 @@ PrefabInstance:
       propertyPath: PlayerID
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8187512371071706937, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
+      propertyPath: AnimationController
+      value: 
+      objectReference: {fileID: 57355394}
     - target: {fileID: 8742012081267675228, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
       propertyPath: m_Name
       value: Tracker2 Camera

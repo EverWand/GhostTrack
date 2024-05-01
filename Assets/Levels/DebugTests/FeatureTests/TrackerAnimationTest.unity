@@ -329,11 +329,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8187512371071706937, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
+      propertyPath: AnimationController
+      value: 
+      objectReference: {fileID: 1483064139}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
+--- !u!95 &1483064139 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1109921096903662793, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
+  m_PrefabInstance: {fileID: 631228988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1567945433
 GameObject:
   m_ObjectHideFlags: 0
