@@ -69314,6 +69314,10 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
+      propertyPath: inputManager
+      value: 
+      objectReference: {fileID: 3320580735307662849}
+    - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}

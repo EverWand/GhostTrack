@@ -287,6 +287,8 @@ MonoBehaviour:
   PlayerID: 1
   bodyObjects:
   - {fileID: 0}
+  skinnedBodyObjects:
+  - {fileID: 2198151441890223509}
   HideAudio: {fileID: 2996883964914956484}
   DecoyAudio: {fileID: 7977622225187339407}
   Body: {fileID: 2198151441895499919}
@@ -313,6 +315,9 @@ MonoBehaviour:
   owner: {fileID: 5725573900452493842}
   currentHealth: 30
   maxHealth: 30
+  GhostDied:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7977622225187339407
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,6 +521,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5572a64bd7a852043ad459aa87aa5d10, type: 3}
+--- !u!137 &2198151441890223509 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 13700018, guid: 5572a64bd7a852043ad459aa87aa5d10, type: 3}
+  m_PrefabInstance: {fileID: 2198151441895403047}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2198151441895499919 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100008, guid: 5572a64bd7a852043ad459aa87aa5d10, type: 3}

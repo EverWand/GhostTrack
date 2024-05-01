@@ -8,6 +8,8 @@ public class GameManagerScript : MonoBehaviour
 {
     public static GameManagerScript instance;
 
+    public TiltFive.TiltFiveManager2 inputManager; //make sure this is filled out in the inspector
+
     public static bool didGhostWin = false;
 
     public UnityEvent TimerOut;
@@ -60,12 +62,14 @@ public class GameManagerScript : MonoBehaviour
     {
         GameManagerScript.didGhostWin = didGhostWin;
         //this will load the game over screen
+        inputManager.gameObject.SetActive(false);
         SceneManager.LoadScene("GameOver");
 
     }
 
     public void OnPlay()
     {
+        inputManager.gameObject.SetActive(false);
         SceneManager.LoadScene("Soph's Level");
         //this will load the main game level
         Debug.Log("WOAH GAMEPLAY!!!!!!");
@@ -74,12 +78,14 @@ public class GameManagerScript : MonoBehaviour
 
 public void LoadMainMenu()
     {
+        inputManager.gameObject.SetActive(false);
         Debug.Log("WOAH MANIN MENU!!!");
         SceneManager.LoadScene("TitleLevel");
     }
 
     public void QuitGame()
     {
+        inputManager.gameObject.SetActive(false);
 #if UNITY_EDITOR
         // Quit the game
         UnityEditor.EditorApplication.isPlaying = false;
