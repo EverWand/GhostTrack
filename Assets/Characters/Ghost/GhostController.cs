@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class GhostController : MonoBehaviour
 {
+    public MeshRenderer[] bodyObjects;
+
     //Sound
     public GameObject HideAudio;
     public GameObject DecoyAudio;
@@ -68,7 +70,7 @@ public class GhostController : MonoBehaviour
 
     //interaction
         //hide
-        if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.One, out bool xPressed, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.Three))
+        if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.X, out bool xPressed, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.Three))
         {
             if(xPressed)
             {
@@ -84,7 +86,7 @@ public class GhostController : MonoBehaviour
             }
         }
         //decoy
-        if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.Two, out bool bPressed, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.Three))
+        if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.B, out bool bPressed, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.Three))
         {
             if (bPressed)
             {
@@ -179,6 +181,10 @@ public class GhostController : MonoBehaviour
             pawnRB.isKinematic = true;
             gameObject.transform.position = interactProp.transform.position;
             isHiding = true;
+            foreach (MeshRenderer target in bodyObjects)
+            {
+                target.enabled = false;
+            }
         }
         else
         {
@@ -187,6 +193,9 @@ public class GhostController : MonoBehaviour
             pawnRB.isKinematic = false;
             visualMesh.enabled = true;
             isHiding = false;
+            foreach (MeshRenderer target in bodyObjects){
+                target.enabled = true;
+            }
         }
     }
 

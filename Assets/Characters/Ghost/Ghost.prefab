@@ -542,6 +542,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29f380f702820cc4abdefe4580cb25d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bodyObjects:
+  - {fileID: 8632434217969789305}
   HideAudio: {fileID: 2996883964914956484}
   DecoyAudio: {fileID: 7977622225187339407}
   Body: {fileID: 9057634621929190360}
@@ -565,6 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d510cae965fc18248acb28e3c81f7501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owner: {fileID: 0}
   currentHealth: 100
   maxHealth: 100
 --- !u!1 &7977622225187339407
