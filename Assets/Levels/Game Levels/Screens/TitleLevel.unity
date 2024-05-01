@@ -10126,6 +10126,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1128696070380495173, guid: fdc00f3034d29484ba3cbba928469879, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299398651753492615, guid: fdc00f3034d29484ba3cbba928469879, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2842767580840448436, guid: fdc00f3034d29484ba3cbba928469879, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4870110113741800980, guid: fdc00f3034d29484ba3cbba928469879, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.07
@@ -10234,6 +10246,10 @@ PrefabInstance:
       propertyPath: StartPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8861125819801840086, guid: fdc00f3034d29484ba3cbba928469879, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -272.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -10243,7 +10259,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2135114791360784138, guid: fdc00f3034d29484ba3cbba928469879, type: 3}
       insertIndex: -1
       addedObject: {fileID: 665014351}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8828733173799850429, guid: fdc00f3034d29484ba3cbba928469879, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 230958591}
   m_SourcePrefab: {fileID: 100100000, guid: fdc00f3034d29484ba3cbba928469879, type: 3}
 --- !u!4 &230958588 stripped
 Transform:
@@ -10255,6 +10274,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2135114791360784138, guid: fdc00f3034d29484ba3cbba928469879, type: 3}
   m_PrefabInstance: {fileID: 230958587}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &230958590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8828733173799850429, guid: fdc00f3034d29484ba3cbba928469879, type: 3}
+  m_PrefabInstance: {fileID: 230958587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &230958591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230958590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 893f8e9485ac9874484a26262d21a060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerID: 0
+  StartPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1231093770}
+        m_TargetAssemblyTypeName: GameManagerScript, Assembly-CSharp
+        m_MethodName: OnPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  CreditsPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 230958590}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  QuitPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1231093770}
+        m_TargetAssemblyTypeName: GameManagerScript, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &230964018
 GameObject:
   m_ObjectHideFlags: 0
