@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameOverScript : MonoBehaviour
 {
 
-    public enum EWinStates { TackerWin, GhostWin};
-    public EWinStates WinState = EWinStates.TackerWin;
+    public UnityEvent MainMenuPressed;
+    public UnityEvent ContinuePressed;
+
+    public enum EWinStates { TrackerWin, GhostWin};
+    public EWinStates WinState = EWinStates.TrackerWin;
 
     [SerializeField] PlayerTag_Script[] PlayerTags;
     [SerializeField] WinnerHeader_Script WinHeader;
@@ -14,13 +18,19 @@ public class GameOverScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //bool winner = GameManagerScript.didGhostWin;
+       
+       // if (!winner) {WinState = EWinStates.TrackerWin; }  //Tracker Win 
+        //else { WinState = EWinStates.GhostWin; }  //Ghost Win 
+
+        UpdateResults();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //DID PLAYER PRESS BUTTON????
+            //INVOKE THE EVENT
     }
 
     void OnValidate() 
@@ -28,11 +38,13 @@ public class GameOverScript : MonoBehaviour
         UpdateResults();
     }
 
+
+
     public void UpdateResults()
     {
         switch (WinState) 
         {
-            case EWinStates.TackerWin:
+            case EWinStates.TrackerWin:
                 WinHeader.Winner = WinnerHeader_Script.EWinner.TRACKERS;
 
                 for (int i = 0; i < PlayerTags.Length; i++)
