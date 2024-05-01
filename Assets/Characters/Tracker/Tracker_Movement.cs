@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TiltFive.Logging;
 
 
-public class Tracker1_Movement : MonoBehaviour
+public class Tracker_Movement : MonoBehaviour
 {
-    public enum TrackerSlots { ONE, TWO };
-    //public floats
-    public TrackerSlots TrackerID;
+    public TiltFive.PlayerIndex PlayerID;
 
 
     public float moveSpeed;
@@ -30,7 +29,7 @@ public class Tracker1_Movement : MonoBehaviour
 
     public void Move()
     {
-        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.Two))
+        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, PlayerID))
         {
             Vector3 movementVector = transform.forward.normalized * joystick.y;
 

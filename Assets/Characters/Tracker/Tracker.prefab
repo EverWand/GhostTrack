@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8288936159801878101}
   - component: {fileID: 6275206083788547460}
   - component: {fileID: 4472249857809339669}
-  - component: {fileID: 1516103329420013646}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -86,27 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1516103329420013646
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374107377097940527}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 0.5, y: 1.7, z: 0.2947064}
-  m_Center: {x: 0, y: 0.8925357, z: -0.01190237}
 --- !u!1 &2455646626639430803
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6640081711098151003}
   - component: {fileID: 256557527839485541}
-  - component: {fileID: 188640838560877320}
+  - component: {fileID: 4191320706392086090}
   - component: {fileID: 1820260093274596932}
   m_Layer: 0
   m_Name: Tracker
@@ -342,8 +320,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!65 &188640838560877320
-BoxCollider:
+--- !u!136 &4191320706392086090
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -360,9 +338,11 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.5, y: 1.7, z: 0.3}
-  m_Center: {x: 0, y: 0.9, z: 0}
+  serializedVersion: 2
+  m_Radius: 0.25
+  m_Height: 1.75
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.85, z: 0}
 --- !u!114 &1820260093274596932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,11 +422,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6132178175923897642, guid: ac17611f933f2524b8ee0a5036ffd429, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 6132178175923897642, guid: ac17611f933f2524b8ee0a5036ffd429, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.5
+      value: 3.56
       objectReference: {fileID: 0}
     - target: {fileID: 6132178175923897642, guid: ac17611f933f2524b8ee0a5036ffd429, type: 3}
       propertyPath: m_LocalRotation.w

@@ -47,7 +47,7 @@ public class GenericProp : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.GetComponent<GhostController>() != null || other.gameObject.GetComponent<Tracker1_Movement>() != null || other.gameObject.GetComponent<Tracker2_Movement>() != null)
+        if(other.gameObject.GetComponent<GhostController>() != null || other.gameObject.GetComponent<Tracker_Movement>() != null )
         {
             DisplayPrompt();
             //other.gameObject.SendMessage("CanInteract", this.gameObject);
@@ -56,7 +56,7 @@ public class GenericProp : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.GetComponent<GhostController>() != null || other.gameObject.GetComponent<Tracker1_Movement>() != null || other.gameObject.GetComponent<Tracker2_Movement>() != null)
+        if (other.gameObject.GetComponent<GhostController>() != null || other.gameObject.GetComponent<Tracker_Movement>() != null )
         {
             HidePrompt();
             //other.gameObject.SendMessage("CanInteract", other.gameObject);

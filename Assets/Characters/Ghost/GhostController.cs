@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TiltFive.Logging;
 
 [RequireComponent(typeof(Rigidbody))]
 public class GhostController : MonoBehaviour
 {
+    public TiltFive.PlayerIndex PlayerID;
     public MeshRenderer[] bodyObjects;
 
     //Sound
@@ -70,7 +72,7 @@ public class GhostController : MonoBehaviour
 
     //interaction
         //hide
-        if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.X, out bool xPressed, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.One))
+        if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.X, out bool xPressed, TiltFive.ControllerIndex.Right, PlayerID))
         {
             if(xPressed)
             {
@@ -86,7 +88,7 @@ public class GhostController : MonoBehaviour
             }
         }
         //decoy
-        if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.B, out bool bPressed, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.One))
+        if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.B, out bool bPressed, TiltFive.ControllerIndex.Right, PlayerID))
         {
             if (bPressed)
             {
@@ -132,7 +134,7 @@ public class GhostController : MonoBehaviour
         }
 
     //movement
-        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.One))
+        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, PlayerID))
         {
             MoveJoystick(new Vector3(-joystick.x, 0, -joystick.y));
         }
