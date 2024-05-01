@@ -6,6 +6,12 @@ public class Tracker_Movement : MonoBehaviour
 {
     public TiltFive.PlayerIndex PlayerID;
 
+    //Dakota Thatcher
+    //-----animation stuff-----
+    [SerializeField] Animator AnimationController; //reference meant to be filled out in the inspector, used to change the locomotion animations
+    float forwardsInput = 0; //data to be passed to animator, value should be -1 to 1
+    public bool isStunned = false;
+    //-----animation stuff-----
 
     public float moveSpeed;
     public float rotationSpeed;
@@ -36,9 +42,24 @@ public class Tracker_Movement : MonoBehaviour
 
             //transform.Translate(new Vector3(0, 0, joystick.y * moveSpeed * Time.deltaTime));
             transform.Rotate(new Vector3(0, joystick.x * rotationSpeed * Time.deltaTime, 0));
+
+            //-----Animation Stuff-----
+            forwardsInput = joystick.y;
+            UpdateAnimator();
+            //-----Animation Stuff-----
         }
     }
 
+
+    //Code written by Dakota Thatcher
+
+    //function passes data to the animator
+    void UpdateAnimator()
+    {
+        Debug.Log("forwards input passed to animator: " + forwardsInput);
+        AnimationController.SetFloat("ForwardsVelocity", forwardsInput);
+        AnimationController.SetBool("isStunned", isStunned);
+    }
 }
 
 

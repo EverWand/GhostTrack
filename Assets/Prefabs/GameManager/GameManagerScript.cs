@@ -8,17 +8,38 @@ public class GameManagerScript : MonoBehaviour
     public GameObject Ghost;
     public GameObject Tracker1;
     public GameObject Tracker2;
+    public float MaxTimeLeft = 5.0f;
+    static float _timeRemaining = 5.0f;
+    public static float TimeRemaining
+    {
+        get { return _timeRemaining; }
+        private set { _timeRemaining = value; }
+    }
+
+    float GameTimer(float DeltaTime)
+    {
+        TimeRemaining -= DeltaTime;
+        if (TimeRemaining <= 0)
+        {
+            OnTimerOver();
+        }
+        return TimeRemaining;
+    }
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        TimeRemaining = MaxTimeLeft;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        GameTimer(Time.deltaTime);
+    }
+    void OnTimerOver()
+    {
+        return;
     }
 }
