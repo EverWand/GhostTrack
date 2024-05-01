@@ -11,7 +11,6 @@ public class MainMenuScript : MonoBehaviour
     public UnityEvent CreditsPressed;
     public UnityEvent QuitPressed;
 
-
     // Update is called once per frame
     void Update()
     {
@@ -21,16 +20,6 @@ public class MainMenuScript : MonoBehaviour
             {
                 StartPressed.Invoke();
             }
-
-        }
-
-        if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.Y, out bool yPressed, TiltFive.ControllerIndex.Right, PlayerID))
-        {
-            if (yPressed)
-            {
-                CreditsPressed.Invoke();
-            }
-
 
         }
 
