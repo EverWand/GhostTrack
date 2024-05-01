@@ -7,6 +7,7 @@ public class GhostController : MonoBehaviour
 {
     public TiltFive.PlayerIndex PlayerID;
     public MeshRenderer[] bodyObjects;
+    public SkinnedMeshRenderer[] skinnedBodyObjects;
 
     //Sound
     public GameObject HideAudio;
@@ -188,6 +189,10 @@ public class GhostController : MonoBehaviour
             {
                 target.enabled = false;
             }
+            foreach (SkinnedMeshRenderer target in skinnedBodyObjects)
+            {
+                target.enabled = false;
+            }
         }
         else
         {
@@ -197,6 +202,10 @@ public class GhostController : MonoBehaviour
             visualMesh.enabled = true;
             isHiding = false;
             foreach (MeshRenderer target in bodyObjects){
+                target.enabled = true;
+            }
+            foreach (SkinnedMeshRenderer target in skinnedBodyObjects)
+            {
                 target.enabled = true;
             }
         }

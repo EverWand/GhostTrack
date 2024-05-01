@@ -24460,20 +24460,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: MaxTimeLeft
-      value: 900
+      value: 3000
       objectReference: {fileID: 0}
+    - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
+      propertyPath: inputManager
+      value: 
+      objectReference: {fileID: 1807324069}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 442058428}
+      objectReference: {fileID: 0}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -24488,19 +24492,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnGameOver
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameManagerScript, Assembly-CSharp
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1617381296966455001, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: TimerOut.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2554825527248176086, guid: 91dc0b43eb1005d418355c697fb91d0e, type: 3}
       propertyPath: m_Name
@@ -75436,6 +75440,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2135114791360784138, guid: fdc00f3034d29484ba3cbba928469879, type: 3}
   m_PrefabInstance: {fileID: 1807324066}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1807324069 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5984806793295380488, guid: fdc00f3034d29484ba3cbba928469879, type: 3}
+  m_PrefabInstance: {fileID: 1807324066}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3f891f73c53bef488a1b03c7a8e743f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1808566104
 PrefabInstance:
   m_ObjectHideFlags: 0
