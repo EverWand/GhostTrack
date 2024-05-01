@@ -1,0 +1,799 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4944076775482802814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1281534288454015430}
+  m_Layer: 0
+  m_Name: Menus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1281534288454015430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4944076775482802814}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -6.8, y: -0.232, z: -5.474}
+  m_LocalScale: {x: 0.007912275, y: 0.007912275, z: 0.007912275}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 2135114791360784138}
+  - {fileID: 8758068553436584356}
+  m_Father: {fileID: 4870110113741800980}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &5632607396768968527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5632607396768968521}
+  - component: {fileID: 5984806793295380488}
+  m_Layer: 0
+  m_Name: Tilt Five Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5632607396768968521
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5632607396768968527}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6740044954109806971}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5984806793295380488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5632607396768968527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3f891f73c53bef488a1b03c7a8e743f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allPlayerSettings:
+  - glassesSettings:
+      RejectUntrackedPositionData: 1
+      FailureMode: 0
+      tiltFiveXR: 1
+      copyPlayerOneCameraTemplate: 1
+      copyPlayerOneObjectTemplate: 1
+      copyPlayerOnePlayerTemplate: 1
+      copyCloneCameraTemplateChildren: 1
+      copyPlayerOneCullingMask: 1
+      copyPlayerOneFOVToggle: 1
+      copyPlayerOneFOV: 1
+      copyPlayerOneNearClipPlane: 1
+      copyPlayerOneFarClipPlane: 1
+      headPoseCamera: {fileID: 5632607397459357457}
+      objectTemplate: {fileID: 0}
+      playerTemplate: {fileID: 0}
+      cloneCameraTemplateChildren: 0
+      cullingMask:
+        serializedVersion: 2
+        m_Bits: 4294967295
+      nearClipPlane: 0.1
+      farClipPlane: 100
+      overrideFOV: 0
+      customFOV: 48
+      glassesMirrorMode: 0
+      usePreviewPose: 1
+      previewPose: {fileID: 0}
+      friendlyName: Tilt Five Glasses
+    scaleSettings:
+      contentScaleUnit: 4
+      contentScaleRatio: 5
+      legacyInvertGameboardScale: 0
+      copyPlayerOneScaleRatio: 1
+      copyPlayerOneScaleUnit: 1
+    gameboardSettings:
+      currentGameBoard: {fileID: 5632607396938955728}
+      gameboardTypeOverride: 4
+      copyPlayerOneGameboard: 1
+    leftWandSettings:
+      RejectUntrackedPositionData: 1
+      FailureMode: 0
+      controllerIndex: 1
+      GripPoint: {fileID: 0}
+      FingertipPoint: {fileID: 0}
+      AimPoint: {fileID: 0}
+    rightWandSettings:
+      RejectUntrackedPositionData: 1
+      FailureMode: 0
+      controllerIndex: 0
+      GripPoint: {fileID: 0}
+      FingertipPoint: {fileID: 0}
+      AimPoint: {fileID: 0}
+    PlayerIndex: 1
+  - glassesSettings:
+      RejectUntrackedPositionData: 1
+      FailureMode: 0
+      tiltFiveXR: 1
+      copyPlayerOneCameraTemplate: 1
+      copyPlayerOneObjectTemplate: 1
+      copyPlayerOnePlayerTemplate: 1
+      copyCloneCameraTemplateChildren: 1
+      copyPlayerOneCullingMask: 1
+      copyPlayerOneFOVToggle: 1
+      copyPlayerOneFOV: 1
+      copyPlayerOneNearClipPlane: 1
+      copyPlayerOneFarClipPlane: 1
+      headPoseCamera: {fileID: 5632607397459357457}
+      objectTemplate: {fileID: 0}
+      playerTemplate: {fileID: 0}
+      cloneCameraTemplateChildren: 0
+      cullingMask:
+        serializedVersion: 2
+        m_Bits: 4294967295
+      nearClipPlane: 0.1
+      farClipPlane: 100
+      overrideFOV: 0
+      customFOV: 48
+      glassesMirrorMode: 0
+      usePreviewPose: 1
+      previewPose: {fileID: 0}
+      friendlyName: Tilt Five Glasses
+    scaleSettings:
+      contentScaleUnit: 4
+      contentScaleRatio: 5
+      legacyInvertGameboardScale: 0
+      copyPlayerOneScaleRatio: 1
+      copyPlayerOneScaleUnit: 1
+    gameboardSettings:
+      currentGameBoard: {fileID: 5632607396938955728}
+      gameboardTypeOverride: 4
+      copyPlayerOneGameboard: 1
+    leftWandSettings:
+      RejectUntrackedPositionData: 1
+      FailureMode: 0
+      controllerIndex: 1
+      GripPoint: {fileID: 0}
+      FingertipPoint: {fileID: 0}
+      AimPoint: {fileID: 0}
+    rightWandSettings:
+      RejectUntrackedPositionData: 1
+      FailureMode: 0
+      controllerIndex: 0
+      GripPoint: {fileID: 0}
+      FingertipPoint: {fileID: 0}
+      AimPoint: {fileID: 0}
+    PlayerIndex: 2
+  - glassesSettings:
+      RejectUntrackedPositionData: 1
+      FailureMode: 0
+      tiltFiveXR: 1
+      copyPlayerOneCameraTemplate: 1
+      copyPlayerOneObjectTemplate: 1
+      copyPlayerOnePlayerTemplate: 1
+      copyCloneCameraTemplateChildren: 1
+      copyPlayerOneCullingMask: 1
+      copyPlayerOneFOVToggle: 1
+      copyPlayerOneFOV: 1
+      copyPlayerOneNearClipPlane: 1
+      copyPlayerOneFarClipPlane: 1
+      headPoseCamera: {fileID: 5632607397459357457}
+      objectTemplate: {fileID: 0}
+      playerTemplate: {fileID: 0}
+      cloneCameraTemplateChildren: 0
+      cullingMask:
+        serializedVersion: 2
+        m_Bits: 4294967295
+      nearClipPlane: 0.1
+      farClipPlane: 100
+      overrideFOV: 0
+      customFOV: 48
+      glassesMirrorMode: 0
+      usePreviewPose: 1
+      previewPose: {fileID: 0}
+      friendlyName: Tilt Five Glasses
+    scaleSettings:
+      contentScaleUnit: 4
+      contentScaleRatio: 5
+      legacyInvertGameboardScale: 0
+      copyPlayerOneScaleRatio: 1
+      copyPlayerOneScaleUnit: 1
+    gameboardSettings:
+      currentGameBoard: {fileID: 5632607396938955728}
+      gameboardTypeOverride: 4
+      copyPlayerOneGameboard: 1
+    leftWandSettings:
+      RejectUntrackedPositionData: 1
+      FailureMode: 0
+      controllerIndex: 1
+      GripPoint: {fileID: 0}
+      FingertipPoint: {fileID: 0}
+      AimPoint: {fileID: 0}
+    rightWandSettings:
+      RejectUntrackedPositionData: 1
+      FailureMode: 0
+      controllerIndex: 0
+      GripPoint: {fileID: 0}
+      FingertipPoint: {fileID: 0}
+      AimPoint: {fileID: 0}
+    PlayerIndex: 3
+  - glassesSettings:
+      RejectUntrackedPositionData: 1
+      FailureMode: 0
+      tiltFiveXR: 1
+      copyPlayerOneCameraTemplate: 1
+      copyPlayerOneObjectTemplate: 1
+      copyPlayerOnePlayerTemplate: 1
+      copyCloneCameraTemplateChildren: 1
+      copyPlayerOneCullingMask: 1
+      copyPlayerOneFOVToggle: 1
+      copyPlayerOneFOV: 1
+      copyPlayerOneNearClipPlane: 1
+      copyPlayerOneFarClipPlane: 1
+      headPoseCamera: {fileID: 5632607397459357457}
+      objectTemplate: {fileID: 0}
+      playerTemplate: {fileID: 0}
+      cloneCameraTemplateChildren: 0
+      cullingMask:
+        serializedVersion: 2
+        m_Bits: 4294967295
+      nearClipPlane: 0.1
+      farClipPlane: 100
+      overrideFOV: 0
+      customFOV: 48
+      glassesMirrorMode: 0
+      usePreviewPose: 1
+      previewPose: {fileID: 0}
+      friendlyName: Tilt Five Glasses
+    scaleSettings:
+      contentScaleUnit: 4
+      contentScaleRatio: 5
+      legacyInvertGameboardScale: 0
+      copyPlayerOneScaleRatio: 1
+      copyPlayerOneScaleUnit: 1
+    gameboardSettings:
+      currentGameBoard: {fileID: 5632607396938955728}
+      gameboardTypeOverride: 4
+      copyPlayerOneGameboard: 1
+    leftWandSettings:
+      RejectUntrackedPositionData: 1
+      FailureMode: 0
+      controllerIndex: 1
+      GripPoint: {fileID: 0}
+      FingertipPoint: {fileID: 0}
+      AimPoint: {fileID: 0}
+    rightWandSettings:
+      RejectUntrackedPositionData: 1
+      FailureMode: 0
+      controllerIndex: 0
+      GripPoint: {fileID: 0}
+      FingertipPoint: {fileID: 0}
+      AimPoint: {fileID: 0}
+    PlayerIndex: 4
+  supportedPlayerCount: 3
+  spectatorSettings:
+    spectatorCamera: {fileID: 5632607397459357457}
+    glassesMirrorMode: 0
+    spectatedPlayer: 1
+    cullingMask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    fieldOfView: 60
+    nearClipPlane: 0.3
+    farClipPlane: 1000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    targetTexture: {fileID: 0}
+  graphicsSettings:
+    matchGlassesFramerate: 1
+  logSettings:
+    level: 0
+    TAG: TFI
+  editorSettings:
+    selectedPlayer: 1
+    selectedPlayerSettingsPanel: 3
+--- !u!1 &5632607396938955729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5632607396938955731}
+  - component: {fileID: 5632607396938955728}
+  m_Layer: 0
+  m_Name: Tilt Five Game Board
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5632607396938955731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5632607396938955729}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8335900894095025649}
+  m_Father: {fileID: 6740044954109806971}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5632607396938955728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5632607396938955729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c75928ed3714ecb8d3d182fe37934a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowGizmo: 1
+  ShowGrid: 0
+  GridHeightOffset: 0
+  StickyHeightOffset: 1
+  GizmoOpacity: 0.2
+  GameboardType: 0
+--- !u!1 &5632607397459357463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5632607397459357456}
+  - component: {fileID: 5632607397459357457}
+  m_Layer: 0
+  m_Name: Tilt Five Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5632607397459357456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5632607397459357463}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3450070206078310501}
+  m_Father: {fileID: 6740044954109806971}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &5632607397459357457
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5632607397459357463}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!1 &5905749857804409080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4870110113741800980}
+  m_Layer: 0
+  m_Name: MenuManger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4870110113741800980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5905749857804409080}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6740044954109806971}
+  - {fileID: 1281534288454015430}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7715583579947889548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3450070206078310501}
+  - component: {fileID: 7025173796977544995}
+  m_Layer: 0
+  m_Name: Audio Listener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3450070206078310501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7715583579947889548}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5632607397459357456}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &7025173796977544995
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7715583579947889548}
+  m_Enabled: 1
+--- !u!1 &8019271614340119783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6740044954109806971}
+  m_Layer: 0
+  m_Name: Tilt Five Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6740044954109806971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8019271614340119783}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5632607396768968521}
+  - {fileID: 5632607396938955731}
+  - {fileID: 5632607397459357456}
+  m_Father: {fileID: 4870110113741800980}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8614164934616010510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8335900894095025649}
+  m_Layer: 0
+  m_Name: Tilt Five Preview Pose
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8335900894095025649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8614164934616010510}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
+  m_LocalPosition: {x: 0, y: 10, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5632607396938955731}
+  m_LocalEulerAnglesHint: {x: 50, y: 0, z: 0}
+--- !u!1001 &3136283000395422983
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1281534288454015430}
+    m_Modifications:
+    - target: {fileID: 3902126439584479757, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902126439584479757, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902126439584479757, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902126439584479757, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902126439584479757, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -139
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902126439584479757, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902126439584479757, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.98433423
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902126439584479757, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.17631261
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902126439584479757, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902126439584479757, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902126439584479757, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -20.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902126439584479757, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902126439584479757, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5837692946377755834, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+      propertyPath: m_Name
+      value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5837692946377755834, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+--- !u!4 &2135114791360784138 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3902126439584479757, guid: ea6bac948f4af79468346606015bffe5, type: 3}
+  m_PrefabInstance: {fileID: 3136283000395422983}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3136471560844463702
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1281534288454015430}
+    m_Modifications:
+    - target: {fileID: 697928809802928324, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1676846469, guid: af03271d20bc35c4f80b27dfdc5de6cf, type: 3}
+    - target: {fileID: 1563477387159729709, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: BackState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859072942261188930, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 978657637, guid: 7840cb908d5f32b4985bba2d403403f1, type: 3}
+    - target: {fileID: 2617064838539244024, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: Winner
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238947983138422427, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_Name
+      value: GameOverMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238947983138422427, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514960526241875584, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: WinState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4598902951867677569, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: BackState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4624806569726222560, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1077257721, guid: f91134ef1350446488448f8ae05ffe0a, type: 3}
+    - target: {fileID: 5560259965852406414, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: WinState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912123183387154418, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912123183387154418, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912123183387154418, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912123183387154418, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912123183387154418, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -135
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912123183387154418, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 78
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912123183387154418, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.98433423
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912123183387154418, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.17631261
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912123183387154418, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912123183387154418, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912123183387154418, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -20.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912123183387154418, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912123183387154418, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912123183387154418, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7286485106364501030, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: WinState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363605506666619427, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: BackState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442762720348659490, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: WinState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660234470829534540, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1077257721, guid: f91134ef1350446488448f8ae05ffe0a, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+--- !u!4 &8758068553436584356 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5912123183387154418, guid: 688df03a03b9eab4abd96e1a9f1c0601, type: 3}
+  m_PrefabInstance: {fileID: 3136471560844463702}
+  m_PrefabAsset: {fileID: 0}
