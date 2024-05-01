@@ -6,17 +6,11 @@ using TiltFive.Logging;
 public class GameManagerScript : MonoBehaviour
 {
     //CHARACTERS
-
-    public TiltFive.Player Testplayer;
-    public TiltFive.PlayerIndex TestPlayerIndex;
-
     public GameObject Ghost;
     public GameObject Tracker1;
     public GameObject Tracker2;
 
-    //
-    public Canvas Timer;
-
+    private GameObject[] PlayerCharacters = [Ghost, Tracker1, Tracker2];
 
     // Start is called before the first frame update
     void Start()
