@@ -86,7 +86,7 @@ public class GhostController : MonoBehaviour
             }
         }
         //decoy
-        if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.B, out bool bPressed, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.Three))
+        if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.B, out bool bPressed, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.One))
         {
             if (bPressed)
             {
@@ -132,7 +132,7 @@ public class GhostController : MonoBehaviour
         }
 
     //movement
-        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.Three))
+        if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, TiltFive.PlayerIndex.One))
         {
             MoveJoystick(new Vector3(-joystick.x, 0, -joystick.y));
         }
