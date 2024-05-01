@@ -10,7 +10,6 @@ public class GameManagerScript : MonoBehaviour
     public GameObject Tracker1;
     public GameObject Tracker2;
 
-    private GameObject[] PlayerCharacters = [Ghost, Tracker1, Tracker2];
 
     // Start is called before the first frame update
     void Start()
