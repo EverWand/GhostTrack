@@ -8,16 +8,22 @@ public class GameManagerScript : MonoBehaviour
     public GameObject Ghost;
     public GameObject Tracker1;
     public GameObject Tracker2;
-    [SerializeField] private float MaxTimeLeft = 5.0f;
-    float TimeRemaining = 5.0f;
+    public float MaxTimeLeft = 5.0f;
+    static float _timeRemaining = 5.0f;
+    public static float TimeRemaining
+    {
+        get { return _timeRemaining; }
+        private set { _timeRemaining = value; }
+    }
 
-    void GameTimer(float DeltaTime)
+    float GameTimer(float DeltaTime)
     {
         TimeRemaining -= DeltaTime;
         if (TimeRemaining <= 0)
         {
-            return;
+            OnTimerOver();
         }
+        return TimeRemaining;
     }
 
 
@@ -31,5 +37,9 @@ public class GameManagerScript : MonoBehaviour
     void Update()
     {
         GameTimer(Time.deltaTime);
+    }
+    void OnTimerOver()
+    {
+        return;
     }
 }
