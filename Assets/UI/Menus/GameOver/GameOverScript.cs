@@ -7,9 +7,6 @@ public class GameOverScript : MonoBehaviour
 {
     public TiltFive.PlayerIndex PlayerID;
 
-    public UnityEvent MainMenuPressed;
-    public UnityEvent ContinuePressed;
-
     public enum EWinStates { TrackerWin, GhostWin};
     public EWinStates WinState = EWinStates.TrackerWin;
 

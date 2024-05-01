@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-
-public class MenuManagerScript : MonoBehaviour
+public class MainMenuScript : MonoBehaviour
 {
     public TiltFive.PlayerIndex PlayerID;
 
@@ -18,31 +17,30 @@ public class MenuManagerScript : MonoBehaviour
     {
         if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.X, out bool xPressed, TiltFive.ControllerIndex.Right, PlayerID))
         {
-            if ( xPressed)
+            if (xPressed)
             {
                 StartPressed.Invoke();
             }
-            
+
         }
 
         if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.Y, out bool yPressed, TiltFive.ControllerIndex.Right, PlayerID))
         {
-            if ( yPressed)
+            if (yPressed)
             {
                 CreditsPressed.Invoke();
             }
 
-            
+
         }
 
         if (TiltFive.Input.TryGetButtonDown(TiltFive.Input.WandButton.B, out bool bPressed, TiltFive.ControllerIndex.Right, PlayerID))
         {
-            if ( bPressed)
+            if (bPressed)
             {
                 QuitPressed.Invoke();
             }
-            
+
         }
     }
-
 }
