@@ -135,7 +135,7 @@ public class GhostController : MonoBehaviour
     //movement
         if (TiltFive.Input.TryGetStickTilt(out Vector2 joystick, TiltFive.ControllerIndex.Right, PlayerID))
         {
-            MoveJoystick(new Vector3(-joystick.x, 0, -joystick.y));
+            MoveJoystick(new Vector3(-joystick.y, 0, joystick.x));
         }
 
         else
@@ -208,46 +208,59 @@ public class GhostController : MonoBehaviour
     public void MoveUp()
     {
         //Create vector for movement
-        Vector3 upMovement = new Vector3(0, 0, 1) * moveSpeed / Time.deltaTime;
+        Vector3 upMovement = new Vector3(0, 0, 1) * moveSpeed;
         //add force to rigidbody
-        pawnRB.AddForce(upMovement);
+        pawnRB.velocity = upMovement;
+
+        RotateToFacing();
     }
 
     public void MoveDown()
     {
         //Create vector for movement
-        Vector3 upMovement = new Vector3(0, 0, -1) * moveSpeed / Time.deltaTime;
+        Vector3 upMovement = new Vector3(0, 0, -1) * moveSpeed;
         //add force to rigidbody
-        pawnRB.AddForce(upMovement);
+        pawnRB.velocity = upMovement;
+
+        RotateToFacing();
     }
 
     public void MoveRight()
     {
         //Create vector for movement
-        Vector3 upMovement = new Vector3(1, 0, 0) * moveSpeed / Time.deltaTime;
+        Vector3 upMovement = new Vector3(1, 0, 0) * moveSpeed;
         //add force to rigidbody
-        pawnRB.AddForce(upMovement);
+        pawnRB.velocity = upMovement;
+
+        RotateToFacing();
     }
 
     public void MoveLeft()
     {
         //Create vector for movement
-        Vector3 upMovement = new Vector3(-1, 0, 0) * moveSpeed / Time.deltaTime;
+        Vector3 upMovement = new Vector3(-1, 0, 0) * moveSpeed;
         //add force to rigidbody
-        pawnRB.AddForce(upMovement);
+        pawnRB.velocity = upMovement;
+
+        RotateToFacing();
     }
 
     public void MoveJoystick(Vector3 moveVector)
     {
         //Create vector for movement
-        Vector3 joyMovement = moveVector * moveSpeed / Time.deltaTime;
+        Vector3 joyMovement = moveVector * moveSpeed; //we dont need to use deltatime in this scenario, unity's native physics system will handle velocity for us
         //add force to rigidbody
-        pawnRB.AddForce(joyMovement);
+        pawnRB.velocity = joyMovement;
 
+        RotateToFacing();
+        
+    }
+
+    void RotateToFacing()
+    {
         Vector3 RotVect = pawnRB.velocity;
         RotVect.y = 0;
         Body.transform.rotation = Quaternion.LookRotation(RotVect);
-        
     }
 
     public void HideSound ()
