@@ -5,6 +5,8 @@ using UnityEngine.Events;
 
 public class GameManagerScript : MonoBehaviour
 {
+    public static GameManagerScript instance;
+
     //CHARACTERS
     public GameObject Ghost;
     public GameObject Tracker1;
@@ -33,6 +35,14 @@ public class GameManagerScript : MonoBehaviour
     void Start()
     {
         TimeRemaining = MaxTimeLeft;
+
+        if (GameManagerScript.instance != null ) //enforce singleton
+        {
+            Destroy(GameManagerScript.instance);
+        }
+        GameManagerScript.instance = this;
+
+        DontDestroyOnLoad(this);
     }
 
     // Update is called once per frame
@@ -40,9 +50,25 @@ public class GameManagerScript : MonoBehaviour
     {
         GameTimer(Time.deltaTime);
     }
+
     void OnTimerOver()
     {
         TimerOut.Invoke();
         return;
+    }
+
+    public void OnGameOver(bool didGhostWin)
+    {
+        //this will load the game over screen
+    }
+
+    public void OnPlay()
+    {
+        //this will load the main game level
+    }
+
+    public void LoadMainMenu()
+    {
+
     }
 }
