@@ -8,6 +8,7 @@ public class GhostController : MonoBehaviour
     public TiltFive.PlayerIndex PlayerID;
     public MeshRenderer[] bodyObjects;
     public SkinnedMeshRenderer[] skinnedBodyObjects;
+    public GameObject bodyObj;
 
     //Sound
     public GameObject HideAudio;
@@ -80,8 +81,10 @@ public class GhostController : MonoBehaviour
 
                 if(interactProp != null && interactProp != this.gameObject)
                 {
-                    if(!interactProp.GetComponent<GenericProp>().isHinting || isHiding)
+                    Debug.Log("Not Null");
+                    if (!interactProp.GetComponent<GenericProp>().isHinting || isHiding)
                     {
+                        Debug.Log("Hide Called");
                         ToggleHide();
                         CallToProp(interactProp, false);
                         HideSound();
@@ -193,6 +196,7 @@ public class GhostController : MonoBehaviour
             {
                 target.enabled = false;
             }
+            bodyObj.SetActive(false);
         }
         else
         {
@@ -208,6 +212,7 @@ public class GhostController : MonoBehaviour
             {
                 target.enabled = true;
             }
+            bodyObj.SetActive(true);
         }
     }
 

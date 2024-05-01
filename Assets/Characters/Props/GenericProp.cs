@@ -50,7 +50,7 @@ public class GenericProp : MonoBehaviour
         if(other.gameObject.GetComponent<GhostController>() != null || other.gameObject.GetComponent<Tracker_Movement>() != null )
         {
             DisplayPrompt();
-            //other.gameObject.SendMessage("CanInteract", this.gameObject);
+            other.gameObject.SendMessage("CanInteract", this.gameObject);
         }
     }
 
@@ -59,7 +59,7 @@ public class GenericProp : MonoBehaviour
         if (other.gameObject.GetComponent<GhostController>() != null || other.gameObject.GetComponent<Tracker_Movement>() != null )
         {
             HidePrompt();
-            //other.gameObject.SendMessage("CanInteract", other.gameObject);
+            other.gameObject.SendMessage("CanInteract", other.gameObject);
         }
     }
 
