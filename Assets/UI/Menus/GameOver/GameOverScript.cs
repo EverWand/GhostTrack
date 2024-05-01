@@ -18,10 +18,10 @@ public class GameOverScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //bool winner = GameManagerScript.didGhostWin;
+        bool winner = GameManagerScript.didGhostWin;
        
-       // if (!winner) {WinState = EWinStates.TrackerWin; }  //Tracker Win 
-        //else { WinState = EWinStates.GhostWin; }  //Ghost Win 
+        if (!winner) {WinState = EWinStates.TrackerWin; }  //Tracker Win 
+        else { WinState = EWinStates.GhostWin; }  //Ghost Win 
 
         UpdateResults();
     }
