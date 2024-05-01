@@ -38,13 +38,17 @@ public class Tracker_Movement : MonoBehaviour
             Vector3 movementVector = transform.forward.normalized * joystick.y;
 
             //Debug.Log(movementVector);
-            rb.AddForce(movementVector * Time.deltaTime * moveSpeed, ForceMode.Force);
+            //rb.AddForce(movementVector * Time.deltaTime * moveSpeed, ForceMode.Force);
 
-            //transform.Translate(new Vector3(0, 0, joystick.y * moveSpeed * Time.deltaTime));
+            transform.Translate(new Vector3(0, 0, joystick.y * moveSpeed * Time.deltaTime));
             transform.Rotate(new Vector3(0, joystick.x * rotationSpeed * Time.deltaTime, 0));
 
             //-----Animation Stuff-----
-            forwardsInput = joystick.y;
+            //calculating animator parameter
+            Vector2 inputVec = new Vector2(joystick.x, joystick.y);
+            float inputMag = inputVec.magnitude;
+            float sign = Mathf.Sign(joystick.y);
+            forwardsInput = sign * inputMag;
             UpdateAnimator();
             //-----Animation Stuff-----
         }

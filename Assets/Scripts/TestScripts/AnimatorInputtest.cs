@@ -7,7 +7,7 @@ public class AnimatorInputtest : MonoBehaviour
     //Dakota Thatcher
     //-----animation stuff-----
     [SerializeField] Animator AnimationController; //reference meant to be filled out in the inspector, used to change the locomotion animations
-    float forwardsInput = 0; //data to be passed to animator, value should be -1 to 1
+    float forwardsInput; //data to be passed to animator, value should be -1 to 1
     public bool isStunned = false;
     //-----animation stuff-----
 
@@ -37,9 +37,9 @@ public class AnimatorInputtest : MonoBehaviour
         Vector3 movementVector = transform.forward.normalized * forwardsInput;
 
         //Debug.Log(movementVector);
-        rb.AddForce(movementVector * deltaTime * moveSpeed, ForceMode.Force);
+        //rb.AddForce(movementVector * deltaTime * moveSpeed, ForceMode.Force);
 
-        //transform.Translate(new Vector3(0, 0, movementVector * Time.deltaTime));
+        transform.Translate(new Vector3(0, 0, moveSpeed * forwardsInput * Time.deltaTime));
         transform.Rotate(new Vector3(0, horizontalInput * rotationSpeed * deltaTime, 0));
 
         //-----Animation Stuff-----
