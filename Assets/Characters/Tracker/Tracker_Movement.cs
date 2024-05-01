@@ -11,6 +11,8 @@ public class Tracker_Movement : MonoBehaviour
     [SerializeField] Animator AnimationController; //reference meant to be filled out in the inspector, used to change the locomotion animations
     float forwardsInput = 0; //data to be passed to animator, value should be -1 to 1
     public bool isStunned = false;
+    public GameObject flashlightPivot; //procedural animation
+    public Transform flashlightRotationOffset;
     //-----animation stuff-----
 
     public float moveSpeed;
@@ -29,6 +31,7 @@ public class Tracker_Movement : MonoBehaviour
     void Update()
     {
         Move();
+        SetFlashlightRotation();
     }
 
     public void Move()
@@ -52,6 +55,12 @@ public class Tracker_Movement : MonoBehaviour
             UpdateAnimator();
             //-----Animation Stuff-----
         }
+    }
+
+    void SetFlashlightRotation()
+    {
+        Quaternion wandRot = TiltFive.Wand.GetRotation(TiltFive.ControllerIndex.Right, PlayerID);
+        flashlightPivot.transform.rotation = wandRot * flashlightRotationOffset.rotation;
     }
 
 

@@ -3147,73 +3147,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4903173184963024, guid: af1ac26269830d347859c2c45ef72494, type: 3}
   m_PrefabInstance: {fileID: 56335377}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &57355392
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 512914011}
-    m_Modifications:
-    - target: {fileID: 2356500680790986833, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356500680790986833, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356500680790986833, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356500680790986833, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356500680790986833, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356500680790986833, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356500680790986833, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356500680790986833, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356500680790986833, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356500680790986833, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356500680791084145, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
-      propertyPath: m_Name
-      value: Man
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
---- !u!4 &57355393 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2356500680790986833, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
-  m_PrefabInstance: {fileID: 57355392}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &57355394 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2356500680783806393, guid: 2b9529d4305a9cb40a5068878022f711, type: 3}
-  m_PrefabInstance: {fileID: 57355392}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &58810621 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4102960483416252, guid: a2a8263781f05fc4e904d29c2b5e4d95, type: 3}
@@ -5177,6 +5110,10 @@ PrefabInstance:
       propertyPath: PlayerID
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8187512371071706937, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
+      propertyPath: flashlightRotationOffset
+      value: 
+      objectReference: {fileID: 493559119}
     - target: {fileID: 8742012081267675228, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
       propertyPath: m_Name
       value: Tracker1 Board Camera
@@ -5195,6 +5132,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5965870015127342612, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
   m_PrefabInstance: {fileID: 117650868}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &117650870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4158442438232833010, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
+  m_PrefabInstance: {fileID: 117650868}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &117650871 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6640081711098151003, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
@@ -5202,17 +5144,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &117650872 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8624518598291568625, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
-  m_PrefabInstance: {fileID: 117650868}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &117650873 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1023330661562119570, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
-  m_PrefabInstance: {fileID: 117650868}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &117650874 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7392330903502341658, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
+  m_CorrespondingSourceObject: {fileID: 4621262942286090899, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
   m_PrefabInstance: {fileID: 117650868}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &117940191
@@ -21227,6 +21159,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4903173184963024, guid: af1ac26269830d347859c2c45ef72494, type: 3}
   m_PrefabInstance: {fileID: 492383667}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &493559118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 493559119}
+  m_Layer: 0
+  m_Name: FlashlightRotationOffset
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &493559119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493559118}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.30070576, y: 0, z: 0, w: 0.953717}
+  m_LocalPosition: {x: 3.1823833, y: 1.3830577, z: 4.910375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 35, y: 0, z: 0}
 --- !u!1001 &494892151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22116,6 +22079,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 601992973}
     m_Modifications:
+    - target: {fileID: 101020984328193674, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
+      propertyPath: m_Name
+      value: Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 128480570674732103, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 5572a64bd7a852043ad459aa87aa5d10, type: 3}
+    - target: {fileID: 1798512316761679726, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
+      propertyPath: m_Name
+      value: SM_Chr_Jock
+      objectReference: {fileID: 0}
     - target: {fileID: 5965870015127342612, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
       propertyPath: m_Name
       value: Tracker2
@@ -22165,29 +22140,22 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8187512371071706937, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
-      propertyPath: AnimationController
+      propertyPath: flashlightRotationOffset
       value: 
-      objectReference: {fileID: 57355394}
-    - target: {fileID: 8742012081267675228, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
-      propertyPath: m_Name
-      value: Tracker2 Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 8742012081821697178, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
-      propertyPath: m_Name
-      value: Tracker2 Game Board
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 493559119}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 101020984328193674, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6640081711098151003, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 57355393}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
 --- !u!1 &512914009 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5965870015127342612, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
+  m_PrefabInstance: {fileID: 512914008}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &512914010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4158442438232833010, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
   m_PrefabInstance: {fileID: 512914008}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &512914011 stripped
@@ -22197,17 +22165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &512914012 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8624518598291568625, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
-  m_PrefabInstance: {fileID: 512914008}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &512914013 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1023330661562119570, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
-  m_PrefabInstance: {fileID: 512914008}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &512914014 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7392330903502341658, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
+  m_CorrespondingSourceObject: {fileID: 4621262942286090899, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
   m_PrefabInstance: {fileID: 512914008}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &513165811
@@ -93466,8 +93424,8 @@ MonoBehaviour:
       FailureMode: 0
       controllerIndex: 0
       GripPoint: {fileID: 117650872}
-      FingertipPoint: {fileID: 117650874}
-      AimPoint: {fileID: 117650873}
+      FingertipPoint: {fileID: 0}
+      AimPoint: {fileID: 117650870}
     PlayerIndex: 2
   - glassesSettings:
       RejectUntrackedPositionData: 1
@@ -93519,8 +93477,8 @@ MonoBehaviour:
       FailureMode: 0
       controllerIndex: 0
       GripPoint: {fileID: 512914012}
-      FingertipPoint: {fileID: 512914014}
-      AimPoint: {fileID: 512914013}
+      FingertipPoint: {fileID: 0}
+      AimPoint: {fileID: 512914010}
     PlayerIndex: 3
   - glassesSettings:
       RejectUntrackedPositionData: 1
@@ -93599,8 +93557,8 @@ MonoBehaviour:
     level: 0
     TAG: TFI
   editorSettings:
-    selectedPlayer: 2
-    selectedPlayerSettingsPanel: 3
+    selectedPlayer: 3
+    selectedPlayerSettingsPanel: 2
 --- !u!4 &3688542728382409024
 Transform:
   m_ObjectHideFlags: 0
@@ -93649,3 +93607,4 @@ SceneRoots:
   - {fileID: 2016340971}
   - {fileID: 257095156}
   - {fileID: 749938616}
+  - {fileID: 493559119}
