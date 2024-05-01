@@ -69,7 +69,7 @@ public class Tracker_Movement : MonoBehaviour
     //function passes data to the animator
     void UpdateAnimator()
     {
-        Debug.Log("forwards input passed to animator: " + forwardsInput);
+        //Debug.Log("forwards input passed to animator: " + forwardsInput);
         AnimationController.SetFloat("ForwardsVelocity", forwardsInput);
         AnimationController.SetBool("isStunned", isStunned);
     }

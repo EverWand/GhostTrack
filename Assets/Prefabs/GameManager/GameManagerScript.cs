@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class GameManagerScript : MonoBehaviour
     public GameObject Ghost;
     public GameObject Tracker1;
     public GameObject Tracker2;
+    public UnityEvent TimerOut;
     public float MaxTimeLeft = 5.0f;
     static float _timeRemaining = 5.0f;
     public static float TimeRemaining
@@ -40,6 +42,7 @@ public class GameManagerScript : MonoBehaviour
     }
     void OnTimerOver()
     {
+        TimerOut.Invoke();
         return;
     }
 }
