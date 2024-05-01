@@ -5106,6 +5106,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8187512371071706937, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
+      propertyPath: PlayerID
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8742012081267675228, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
       propertyPath: m_Name
       value: Tracker1 Board Camera
@@ -5117,31 +5121,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5965870015127342612, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 117650870}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
 --- !u!1 &117650869 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5965870015127342612, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
   m_PrefabInstance: {fileID: 117650868}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &117650870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 117650869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd69745230b3e214786bb2ef7037b0b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerID: 2
-  moveSpeed: 1500
-  rotationSpeed: 80
 --- !u!4 &117650871 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6640081711098151003, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
@@ -22107,6 +22093,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8187512371071706937, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
+      propertyPath: PlayerID
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8742012081267675228, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
       propertyPath: m_Name
       value: Tracker2 Camera
@@ -22118,10 +22108,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5965870015127342612, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 745831881}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 860a6a9e9401ecd4fbc10495c2911948, type: 3}
 --- !u!1 &512914009 stripped
 GameObject:
@@ -31094,21 +31081,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4903173184963024, guid: af1ac26269830d347859c2c45ef72494, type: 3}
   m_PrefabInstance: {fileID: 745568771}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &745831881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 512914009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd69745230b3e214786bb2ef7037b0b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerID: 3
-  moveSpeed: 1500
-  rotationSpeed: 80
 --- !u!1001 &747239854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93580,8 +93552,8 @@ MonoBehaviour:
     level: 0
     TAG: TFI
   editorSettings:
-    selectedPlayer: 3
-    selectedPlayerSettingsPanel: 2
+    selectedPlayer: 2
+    selectedPlayerSettingsPanel: 3
 --- !u!4 &3688542728382409024
 Transform:
   m_ObjectHideFlags: 0

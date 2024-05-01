@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TiltFive.Logging;
 
 public class GameManagerScript : MonoBehaviour
 {
