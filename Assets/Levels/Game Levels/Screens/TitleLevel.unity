@@ -10134,6 +10134,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2510411500005621168, guid: fdc00f3034d29484ba3cbba928469879, type: 3}
+      propertyPath: m_text
+      value: "CREDITS:\r\n\rSophie Schenck - Level Designer, Concept Designer\r\nRyland
+        Kealey - Concepts Designer, Programmer\r\nPierson McInelly - Programmer\r\nKyler
+        Burson - Concept Designer, Flex, Documentation :)\r\nKyle Suttie - Flex,
+        Concept Designer\r\nLucas Foxworthy - UI/UX, Programmer\r\nZaki Habul - Music
+        Composer, Sound Design\nBenjamin Branch - Programmer\nDakota Thatcher - Prgrammer
+        and Animator\r\n\r\n\nASSETS FOUND:\r\n\rPOLYGON - Horror Mansion by SYNTY\r\n\rPOLYGON
+        - Starter Pack by SYNTY\r\n\rInput Prompts by Kenney\r\n\rFantasy UI Border
+        by Kenney"
+      objectReference: {fileID: 0}
     - target: {fileID: 2842767580840448436, guid: fdc00f3034d29484ba3cbba928469879, type: 3}
       propertyPath: m_IsActive
       value: 1
