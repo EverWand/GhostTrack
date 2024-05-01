@@ -75,6 +75,8 @@ public class GhostController : MonoBehaviour
         {
             if(xPressed)
             {
+                Debug.Log("Pressed a button");
+
                 if(interactProp != null && interactProp != this.gameObject)
                 {
                     if(!interactProp.GetComponent<GenericProp>().isHinting || isHiding)

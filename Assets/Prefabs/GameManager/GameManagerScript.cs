@@ -10,10 +10,6 @@ public class GameManagerScript : MonoBehaviour
 
     public static bool didGhostWin = false;
 
-    //CHARACTERS
-    public GameObject Ghost;
-    public GameObject Tracker1;
-    public GameObject Tracker2;
     public UnityEvent TimerOut;
     public float MaxTimeLeft = 5.0f;
     static float _timeRemaining = 5.0f;
@@ -72,10 +68,24 @@ public class GameManagerScript : MonoBehaviour
     {
         SceneManager.LoadScene("Soph's Level");
         //this will load the main game level
+        Debug.Log("WOAH GAMEPLAY!!!!!!");
+        
     }
 
-    public void LoadMainMenu()
+public void LoadMainMenu()
     {
+        Debug.Log("WOAH MANIN MENU!!!");
         SceneManager.LoadScene("TitleLevel");
+    }
+
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+        // Quit the game
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        // Quit the game
+        Application.Quit();
+#endif
     }
 }
