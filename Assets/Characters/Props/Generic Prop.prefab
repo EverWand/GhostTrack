@@ -146,9 +146,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactPrompt: {fileID: 3742176871338469674}
-  swapMat: {fileID: 2100000, guid: 420623e739310654ea4011c8b6e522d2, type: 2}
+  swapMat: {fileID: 2100000, guid: 42a64eeea496b5c488c15ba0ba2e3940, type: 2}
   isHinting: 0
-  decoyCooldown: 1
+  decoyCooldown: 10
 --- !u!1 &3742176871338469674
 GameObject:
   m_ObjectHideFlags: 0
