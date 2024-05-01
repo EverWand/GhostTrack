@@ -25,6 +25,7 @@ public class DamageGhostByTouching : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (CanSee())
         {
             GhostHealth ghostHealth = ghosts[0].gameObject.GetComponent<GhostHealth>();
@@ -43,6 +44,7 @@ public class DamageGhostByTouching : MonoBehaviour
 
     public bool CanSee()
     {
+
         if (IsWithinRange())
         {
             Vector3 vectorToTarget = ghosts[0].transform.position - transform.position;
@@ -99,6 +101,7 @@ public class DamageGhostByTouching : MonoBehaviour
 
     public bool IsWithinRange()
     {
+
         // assuming that there is only ever one ghost in the scene
         if (Vector3.Distance(transform.position, ghosts[0].transform.position) <= range)
         {
