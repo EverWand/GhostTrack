@@ -9,7 +9,12 @@ public class GameManagerScript : MonoBehaviour
     public GameObject Tracker1;
     public GameObject Tracker2;
     public float MaxTimeLeft = 5.0f;
-    public float TimeRemaining = 5.0f;
+    static float _timeRemaining = 5.0f;
+    public static float TimeRemaining
+    {
+        get { return _timeRemaining; }
+        private set { _timeRemaining = value; }
+    }
 
     float GameTimer(float DeltaTime)
     {
